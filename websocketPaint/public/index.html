@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvasPaint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Websocket Paint</div>
+    <div class="paint__tools">
+        <p>
+            <span class="paint__tools-color">Select color:</span>
+            <input id="color" type="color">
+        </p>
+        <div class="paint__slider">
+            <p>
+                <span class="paint__tools-range">Select line thickness:</span>
+                <input type="range" id="range" min="1" max="10" class="paint__slider-class">
+            </p>
+        </div>
+        <button type="button" id="clear">Clear All</button>
+    </div>
+</header>
+<main>
+    <div class="paint__canvas">
+        <canvas id="canvas" width="1280" height="720" class="paint__canvas-class"></canvas>
+    </div>
+
+</main>
+
+<footer>
+
+</footer>
+<script src="store.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
